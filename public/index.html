@@ -75,17 +75,511 @@
         >
       </div>
     </div>
+    <!-- desktop navbar -->
+    <nav
+      class="hidden md:block bg-white p-4 shadow-lg sticky z-10 top-0 mb-8"
+    >
+      <div class="container mx-auto max-w-screen-2xl flex justify-between items-center">
+        <ul class="flex gap-x-0 lg:gap-x-4 items-center text-slate-800 lg:text-lg">
+          <li class="">
+            <a
+              class="hover:bg-gray-100 hover:rounded-md transition-all duration-500 block px-4 py-2"
+              href="#"
+            >
+              <svg
+                width="99"
+                height="26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.744 1.41V5.42H4.732V1.41h4.012Zm1.941 11.569c.173 0 .259.086.259.259v4.503c0 .173-.086.259-.259.259H9.65c-.276 0-.475-.009-.595-.026-.087 1.208-.337 2.235-.751 3.08-.414.863-1.078 1.657-1.993 2.381-.897.725-2.157 1.484-3.779 2.278L.746 21.727c1.208-.725 2.054-1.311 2.537-1.76.483-.449.776-.889.88-1.32.12-.431.181-1.13.181-2.096V7.49h4.762v4.918c0 .173.044.311.13.414a.56.56 0 0 0 .414.156h1.035Zm8.672-.233a5.21 5.21 0 0 1-.699 2.64A5.43 5.43 0 0 1 16.77 17.3a5.12 5.12 0 0 1-2.64.699h-3.442c-.173 0-.26-.086-.26-.259v-4.503c0-.173.087-.26.26-.26h3.39a.497.497 0 0 0 .363-.155.527.527 0 0 0 .155-.388V6.767h4.762v5.979Zm.052 7.325v4.011h-8.024v-4.011h8.024ZM26.094 18a5.119 5.119 0 0 1-2.64-.699 5.43 5.43 0 0 1-1.89-1.915 5.21 5.21 0 0 1-.698-2.64V.322h4.762v12.113c0 .173.043.31.13.414.103.087.232.13.388.13h1.578c.173 0 .26.086.26.259v4.503c0 .173-.087.259-.26.259h-1.63ZM35.798.685v4.011h-8.024V.685h8.024Zm-4.763 6.082h4.763v5.979a5.21 5.21 0 0 1-.7 2.64A5.43 5.43 0 0 1 33.21 17.3a5.119 5.119 0 0 1-2.64.699h-2.846c-.173 0-.26-.086-.26-.259v-4.503c0-.173.087-.26.26-.26h2.795a.496.496 0 0 0 .362-.155.527.527 0 0 0 .155-.388V6.767Z"
+                  fill="#222F5D"
+                />
+                <path
+                  d="M56.737 12.979c.173 0 .26.086.26.259v4.503c0 .173-.087.259-.26.259h-.724c.034.31.051.544.051.699a5.567 5.567 0 0 1-.776 2.873 5.615 5.615 0 0 1-2.096 2.07 5.614 5.614 0 0 1-2.9.777h-6.108a6.878 6.878 0 0 1-3.545-.958 7.159 7.159 0 0 1-2.589-2.588 6.878 6.878 0 0 1-.957-3.546v-6.833h4.762v6.574c0 .639.224 1.182.673 1.63.466.467 1.018.7 1.656.7h6.186c.207 0 .38-.07.518-.207a.672.672 0 0 0 .207-.492.672.672 0 0 0-.207-.492.702.702 0 0 0-.518-.207h-5.668v-5.021h12.035ZM56.74 18c-.173 0-.259-.086-.259-.259v-4.503c0-.173.086-.26.259-.26h5.798c1.173 0 2.174-.361 3.002-1.086l2.045-1.812-2.977-1.45c-.241-.103-.431-.155-.57-.155-.31 0-.62.138-.93.414l-2.693 2.977-3.313-2.899 2.718-3.313c.552-.656 1.2-1.13 1.941-1.423a5.725 5.725 0 0 1 2.226-.466c.863 0 1.682.207 2.459.62l5.539 2.59a.597.597 0 0 0 .207.05h3.339v4.66h-3.313v.724c0 .173.043.311.13.414a.56.56 0 0 0 .413.156h3.236c.172 0 .258.086.258.259v4.503c0 .173-.086.259-.258.259H72.76c-1.018 0-1.855-.242-2.51-.725-.639-.5-1.165-1.225-1.58-2.174l-.517.518a9.264 9.264 0 0 1-2.925 1.786A9.664 9.664 0 0 1 61.89 18h-5.151Zm3.21 2.07h4.011v4.012h-4.012v-4.011Zm24.72-7.324a5.21 5.21 0 0 1-.698 2.64 5.43 5.43 0 0 1-1.89 1.915 5.12 5.12 0 0 1-2.64.699H76c-.172 0-.259-.086-.259-.259v-4.503c0-.173.087-.26.26-.26h3.39a.496.496 0 0 0 .362-.155.526.526 0 0 0 .155-.388V6.767h4.763v5.979Zm.053 7.325v4.011h-8.024v-4.011h8.024Zm8.315-7.092c.449 0 .673-.181.673-.544a.418.418 0 0 0-.155-.336c-.104-.104-.346-.285-.725-.544l-5.824-4.011 2.718-3.935 6.6 4.582c.707.552 1.242 1.138 1.605 1.76.362.62.543 1.397.543 2.329 0 1.087-.267 2.07-.802 2.95a5.62 5.62 0 0 1-2.122 2.045 6.073 6.073 0 0 1-2.925.725h-6.445v-5.021h6.859Z"
+                  fill="#FF755C"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="">
+            <a
+              class="hover:bg-gray-100 hover:rounded-md transition-all duration-500 block px-4 py-2"
+              href="#"
+              >خانه</a
+            >
+          </li>
+          <li class="">
+            <a
+              class="hover:bg-gray-100 hover:rounded-md transition-all duration-500 block px-4 py-2"
+              href="#"
+              >تلفن‌ همراه</a
+            >
+          </li>
+          <li class="">
+            <a
+              class="hover:bg-gray-100 hover:rounded-md transition-all duration-500 block px-4 py-2"
+              href="#"
+              >لپ‌تاپ</a
+            >
+          </li>
+          <li class="">
+            <a
+              class="hover:bg-gray-100 hover:rounded-md transition-all duration-500 block px-4 py-2"
+              href="#"
+              >ساعت هوشمند</a
+            >
+          </li>
+        </ul>
+        <!-- searchBar -->
+        <div class="flex-1 max-w-xl mr-3">
+          <div class="bg-gray-100 rounded-lg flex items-center p-1">
+            <span class="ml-3 mr-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 text-gray-700"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </span>
+            <input
+              class="focus:outline-none bg-transparent w-full p-2 text-slate-800"
+              type="text"
+              name="search"
+              placeholder="جستجوی محصول..."
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- content -->
     <div
-      class="grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8"
+      class="md:px-5 container mx-auto max-w-screen-2xl grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8"
     >
       <!-- sidebar -->
-      <div
-        class="hidden md:block bg-white p-4 col-span-4 lg:col-span-3 row-span-2"
-      >
-        sidebar
+      <div class="hidden md:block col-span-4 lg:col-span-3 row-span-2 xl:col-span-2">
+        <div class="bg-white p-4 rounded-xl">
+          <!-- category -->
+          <div class="mb-7">
+            <div class="text-orange-500 text-lg font-bold mb-5">دسته‌بندی</div>
+            <ul>
+              <li class="mb-1">
+                <a
+                  class="flex items-center gap-x-2 p-2 text-slate-800 hover:bg-gray-50 cursor-pointer rounded-md"
+                  href="#"
+                >
+                  <span class="rounded-full w-5 h-5 bg-gray-100 relative">
+                    <svg
+                      class="w-4 h-5 absolute top-1.5 right-1.5"
+                      fill="none"
+                      stroke="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 4.75v7.5c0 3-.75 3.75-3.75 3.75h-4.5c-3 0-3.75-.75-3.75-3.75v-7.5C1 1.75 1.75 1 4.75 1h4.5c3 0 3.75.75 3.75 3.75ZM8.5 3.625h-3"
+                        stroke-width="1.125"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7 13.825A1.163 1.163 0 1 0 7 11.5a1.163 1.163 0 0 0 0 2.325Z"
+                        stroke-width="1.125"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span>تلفن همراه</span>
+                </a>
+              </li>
+
+              <li class="mb-1">
+                <a
+                  class="flex items-center gap-x-2 p-2 text-slate-800 hover:bg-gray-50 cursor-pointer rounded-md"
+                  href="#"
+                >
+                  <span class="rounded-full w-5 h-5 bg-gray-100 relative">
+                    <svg
+                      class="w-4 h-5 absolute top-1.5 right-1.5"
+                      fill="none"
+                      stroke="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.293 1.333H11.7c2.373 0 2.967.594 2.967 2.96v4.22c0 2.374-.594 2.96-2.96 2.96H4.293c-2.366.007-2.96-.586-2.96-2.953V4.294c0-2.367.594-2.96 2.96-2.96ZM8 11.48v3.187M1.333 8.666h13.334M5 14.666h6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span>لپ‌ تاپ</span>
+                </a>
+              </li>
+              <li class="">
+                <a
+                  class="flex items-center gap-x-2 p-2 text-slate-800 hover:bg-gray-50 cursor-pointer rounded-md"
+                  href="#"
+                >
+                  <span class="rounded-full w-5 h-5 bg-gray-100 relative">
+                    <svg
+                      class="w-4 h-5 absolute top-1.5 right-1.5"
+                      fill="none"
+                      stroke="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.666 12.667h4.667c1.553 0 2.333-.78 2.333-2.333V5.667c0-1.553-.78-2.333-2.333-2.333H5.666c-1.553 0-2.333.78-2.333 2.333v4.667c0 1.553.78 2.333 2.333 2.333ZM10.666 1.333H5.333M10.666 14.666H5.333"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.667 6.333v2h2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span>ساعت هوشمند</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- desktop filter -->
+          <div>
+            <div class="text-orange-500 text-lg font-bold mb-5">فیلتر</div>
+            <!-- header -->
+            <!-- accordian 1 -->
+            <div x-data="{isOpenBrand: true}" class="mb-4">
+              <div
+                @click="isOpenBrand = !isOpenBrand"
+                class="mb-2 flex justify-between items-center w-full p-2 hover:bg-gray-50 rounded-lg cursor-pointer"
+              >
+                <div class="flex items-center">
+                  <span class="rounded-full w-5 h-5 bg-gray-100 relative">
+                    <svg
+                      class="w-4 h-5 absolute top-1.5 right-1.5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.833 13.271H1.167a.44.44 0 0 1-.438-.438.44.44 0 0 1 .438-.437h11.666a.44.44 0 0 1 .438.438.44.44 0 0 1-.438.437Z"
+                        fill="#222F5D"
+                      />
+                      <path
+                        d="M2.158 12.833h-.875l.03-7.017c0-.496.227-.957.618-1.26l4.083-3.18a1.61 1.61 0 0 1 1.972 0l4.083 3.174c.385.303.619.776.619 1.266v7.017h-.875V5.821a.747.747 0 0 0-.28-.577L7.449 2.07a.735.735 0 0 0-.898 0L2.468 5.25a.727.727 0 0 0-.28.571l-.03 7.012Z"
+                        fill="#222F5D"
+                      />
+                      <path
+                        d="M9.917 13.27H4.083a.44.44 0 0 1-.437-.437V7.291c0-.723.589-1.312 1.312-1.312h4.084c.723 0 1.312.59 1.312 1.313v5.541a.44.44 0 0 1-.437.438Zm-5.396-.874h4.958V7.29a.44.44 0 0 0-.437-.437H4.958a.44.44 0 0 0-.437.438v5.104Z"
+                        fill="#222F5D"
+                      />
+                      <path
+                        d="M5.833 10.791a.44.44 0 0 1-.437-.437v-.875a.44.44 0 0 1 .437-.438.44.44 0 0 1 .438.438v.875a.44.44 0 0 1-.438.438ZM7.875 4.813h-1.75a.44.44 0 0 1-.438-.438.44.44 0 0 1 .438-.438h1.75a.44.44 0 0 1 .438.438.44.44 0 0 1-.438.438Z"
+                        fill="#222F5D"
+                      />
+                    </svg>
+                  </span>
+                  <span class="mr-3 text-base">برند محصول</span>
+                </div>
+                <svg
+                  :class="isOpenBrand ? 'rotate-180' : '' "
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 transition-all duration-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                  />
+                </svg>
+              </div>
+              <!-- content -->
+              <div
+                x-show="isOpenBrand=== true"
+                class="px-2 flex flex-col gap-y-2"
+              >
+                <label
+                  for="apple"
+                  class="py-2 flex items-center cursor-pointer"
+                >
+                  <input
+                    type="checkbox"
+                    name="bran"
+                    id="apple"
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                  />
+                  <span class="text-slate-800 mr-2"> اپل </span>
+                </label>
+                <label
+                  for="Xiaomi"
+                  class="py-2 flex items-center gap-1 cursor-pointer"
+                >
+                  <input
+                    type="checkbox"
+                    name="bran"
+                    id="Xiaomi"
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                  />
+                  <span class="text-slate-800 mr-2"> شیائومی </span>
+                </label>
+                <label
+                  for="samsung"
+                  class="py-2 flex items-center gap-x-3 gap-y-1 cursor-pointer"
+                >
+                  <input
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                    type="checkbox"
+                    name="brand"
+                    id="samsung"
+                  />
+                  <span class="text-slate-800">سامسونگ</span>
+                </label>
+                <label
+                  for="huawei"
+                  class="py-2 flex items-center gap-x-3 gap-y-1 cursor-pointer"
+                >
+                  <input
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                    type="checkbox"
+                    name="brand"
+                    id="huawei"
+                  />
+                  <span class="text-slate-800">شیائومی</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- accordian 2 -->
+
+            <div x-data="{isOpenColor: true}" class="mb-4">
+              <div
+                @click="isOpenColor = !isOpenColor"
+                class="mb-2 flex justify-between items-center w-full p-2 hover:bg-gray-50 rounded-lg cursor-pointer"
+              >
+                <div class="flex items-center">
+                  <span class="rounded-full w-5 h-5 bg-gray-100 relative">
+                    <svg
+                      class="w-4 h-5 absolute top-1.5 right-1.5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.833 2.625V10.5c0 .63-.256 1.207-.665 1.627l-.023.024a1.83 1.83 0 0 1-.163.146 2.041 2.041 0 0 1-.578.35c-.064.029-.128.052-.192.075-.228.076-.473.111-.712.111a2.48 2.48 0 0 1-.467-.046c-.075-.018-.151-.036-.227-.059a2.117 2.117 0 0 1-.268-.099c0-.006 0-.006-.006 0a2.946 2.946 0 0 1-.467-.286l-.006-.006a1.598 1.598 0 0 1-.21-.186c-.064-.07-.128-.14-.192-.216a2.94 2.94 0 0 1-.286-.467c.006-.006.006-.006 0-.006 0 0 0-.005-.006-.011-.035-.082-.064-.17-.093-.257-.024-.076-.041-.152-.059-.228a2.483 2.483 0 0 1-.046-.466V2.625c0-.875.583-1.458 1.458-1.458h1.75c.875 0 1.458.583 1.458 1.458Z"
+                        stroke="#222F5D"
+                        stroke-width=".875"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.833 9.625v1.75c0 .875-.583 1.458-1.458 1.458H3.5c.24 0 .484-.035.712-.11.064-.024.128-.047.192-.077.204-.081.403-.198.578-.35.052-.04.11-.093.163-.145l.023-.024 3.967-3.96h2.24c.875 0 1.458.583 1.458 1.458ZM2.806 12.729a2.237 2.237 0 0 1-.957-.578 2.237 2.237 0 0 1-.577-.957c.227.73.805 1.307 1.534 1.534Z"
+                        stroke="#222F5D"
+                        stroke-width=".875"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="m10.716 6.586-1.581 1.58-3.967 3.961c.409-.42.665-.997.665-1.627V4.865l1.581-1.58c.618-.62 1.447-.62 2.065 0l1.237 1.236c.618.618.618 1.446 0 2.065ZM3.5 11.083a.583.583 0 1 0 0-1.167.583.583 0 0 0 0 1.167Z"
+                        stroke="#222F5D"
+                        stroke-width=".875"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="mr-3 text-base">رنگ محصول</span>
+                </div>
+                <svg
+                  :class="isOpenColor ? 'rotate-180' : '' "
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 transition-all duration-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                  />
+                </svg>
+              </div>
+              <!-- content -->
+              <div
+                x-show="isOpenColor=== true"
+                class="px-2 flex flex-col gap-y-2"
+              >
+                <label for="blue" class="py-2 flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    name="color"
+                    id="blue"
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                  />
+                  <span class="text-slate-800 mr-2"> آبی </span>
+                </label>
+                <label
+                  for="yellow"
+                  class="py-2 flex items-center gap-1 cursor-pointer"
+                >
+                  <input
+                    type="checkbox"
+                    name="color"
+                    id="yellow"
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                  />
+                  <span class="text-slate-800 mr-2"> زرد </span>
+                </label>
+                <label
+                  for="green"
+                  class="py-2 flex items-center gap-x-3 gap-y-1 cursor-pointer"
+                >
+                  <input
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                    type="checkbox"
+                    name="Color"
+                    id="green"
+                  />
+                  <span class="text-slate-800">سبز</span>
+                </label>
+                <label
+                  for="red"
+                  class="py-2 flex items-center gap-x-3 gap-y-1 cursor-pointer"
+                >
+                  <input
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                    type="checkbox"
+                    name="Color"
+                    id="red"
+                  />
+                  <span class="text-slate-800">قرمز</span>
+                </label>
+              </div>
+            </div>
+            <!-- accordian 3 -->
+
+            <div x-data="{isOpenPrice: true}">
+              <div
+                @click="isOpenPrice = !isOpenPrice"
+                class="mb-2 flex justify-between items-center w-full p-2 hover:bg-gray-50 rounded-lg cursor-pointer"
+              >
+                <div class="flex items-center">
+                  <span class="rounded-full w-5 h-5 bg-gray-100 relative">
+                    <svg
+                      class="w-4 h-5 absolute top-1.5 right-1.5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.523 7.904c-.245.239-.385.583-.35.95.053.63.63 1.091 1.26 1.091h1.109v.695a2.198 2.198 0 0 1-2.194 2.193H3.652a2.198 2.198 0 0 1-2.194-2.193V6.714c0-1.208.986-2.193 2.194-2.193h6.696c1.208 0 2.194.985 2.194 2.193v.84h-1.179c-.326 0-.624.128-.84.35Z"
+                        stroke="#222F5D"
+                        stroke-width=".875"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.458 7.239V4.573c0-.694.426-1.313 1.074-1.558l4.631-1.75c.724-.274 1.5.263 1.5 1.039V4.52M13.16 8.15v1.2c0 .322-.257.584-.584.596h-1.143c-.63 0-1.208-.461-1.26-1.091a1.172 1.172 0 0 1 .35-.95c.216-.222.513-.35.84-.35h1.213a.599.599 0 0 1 .583.594ZM4.083 7h4.084"
+                        stroke="#222F5D"
+                        stroke-width=".875"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  <span class="mr-3 text-base">محدوده قیمت</span>
+                </div>
+                <svg
+                  :class="isOpenPrice ? 'rotate-180' : '' "
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 transition-all duration-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                  />
+                </svg>
+              </div>
+              <!-- content -->
+              <div
+                x-show="isOpenPrice=== true"
+                class="px-2 flex flex-col gap-y-2"
+              >
+                <label
+                  for="price-1"
+                  class="py-2 flex items-center cursor-pointer"
+                >
+                  <input
+                    type="checkbox"
+                    name="price"
+                    id="price-1"
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                  />
+                  <span class="text-slate-800 mr-2"> از ۰ تا ۵ میلیون </span>
+                </label>
+                <label
+                  for="price-2"
+                  class="py-2 flex items-center gap-1 cursor-pointer"
+                >
+                  <input
+                    type="checkbox"
+                    name="price"
+                    id="price-2"
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                  />
+                  <span class="text-slate-800 mr-2"> ۵ تا ۱۰ میلیون </span>
+                </label>
+                <label
+                  for="price-3"
+                  class="py-2 flex items-center gap-x-3 gap-y-1 cursor-pointer"
+                >
+                  <input
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                    type="checkbox"
+                    name="price"
+                    id="price-3"
+                  />
+                  <span class="text-slate-800">۱۰ تا ۱۵ میلیون</span>
+                </label>
+                <label
+                  for="price-4"
+                  class="py-2 flex items-center gap-x-3 gap-y-1 cursor-pointer"
+                >
+                  <input
+                    class="form-checkbox rounded text-orange-400 focus:ring-orange-500"
+                    type="checkbox"
+                    name="price"
+                    id="price-2"
+                  />
+                  <span class="text-slate-800">۱۵ تا بالا</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- sort section -->
-      <div class="hidden md:block col-span-8 lg:col-span-9">
+      <div class="hidden md:block col-span-8 lg:col-span-9  xl:col-span-10">
         <div
           x-data="{sort :1, activeClass: 'text-slate-800 font-bold'}"
           class="flex items-center gap-x-4 bg-white rounded-lg p-x-4"
@@ -127,10 +621,9 @@
           >
             <span>گران‌ترین</span>
             <span
-            x-show="sort===2"
-            class="w-2 h-2 bg-orange-500 rounded-full absolute"
-          ></span>
-            
+              x-show="sort===2"
+              class="w-2 h-2 bg-orange-500 rounded-full absolute"
+            ></span>
           </button>
           <button
             @click="sort=3"
@@ -139,9 +632,9 @@
           >
             <span>ارزان‌ترین</span>
             <span
-            x-show="sort===3"
-            class="w-2 h-2 bg-orange-500 rounded-full absolute"
-          ></span>
+              x-show="sort===3"
+              class="w-2 h-2 bg-orange-500 rounded-full absolute"
+            ></span>
           </button>
           <button
             @click="sort=4"
@@ -150,16 +643,16 @@
           >
             <span> پرفروش‌ترین </span>
             <span
-            x-show="sort===4"
-            class="w-2 h-2 bg-orange-500 rounded-full absolute"
-          ></span>
+              x-show="sort===4"
+              class="w-2 h-2 bg-orange-500 rounded-full absolute"
+            ></span>
           </button>
         </div>
       </div>
 
       <!-- product setion  -->
 
-      <div class="col-span-12 md:col-span-8 lg:col-span-9">
+      <div class="col-span-12 md:col-span-8 lg:col-span-9  xl:col-span-10">
         <div
           class="grid gap-x-2 gap-y-8 grid-cols-2 lg:grid-cols-4 px-2 md:p-0 sm:gap-x-4 md:gap-x-6 md:gap-y-10"
           x-data="{ 
